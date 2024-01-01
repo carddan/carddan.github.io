@@ -1,0 +1,174 @@
+<!DOCTYPE html><html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>carddan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+    <link rel="stylesheet" href="about.css">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/64820242?v=4" type="image/png">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('new.png'); 
+      background-size: cover;
+    }
+    header {
+      background-color: rgba(250, 237, 248,0.85); 
+      padding: 10px;
+      text-align: center;
+    }
+
+    h2 {
+     position: relative;
+     display: inline-block;
+    }
+
+    h2::after {
+     content: '';
+     display: block;
+     width: 60%; 
+     height: 2px; 
+     background-color: #333; 
+     position: absolute;
+     bottom: 0;
+     left: 25%; 
+    }
+
+    #bio p {
+        font-weight: bold;
+    }
+    #skills {
+        text-align:center;
+    }
+    table {
+        margin: 0 auto;
+        border-collapse:collapse;
+    }
+    td {
+        font-weight: bold;
+        padding: 10px 40px;
+    }
+    #rc p {
+        font-weight: bold;
+    }
+    #bio,
+    #skills
+    {
+        margin-bottom: -20px;
+    }
+    #navbar {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      background-color: transparent;
+      z-index: 1000;
+    }
+    #navbar a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+    #navbar a:hover {
+      color: #666;
+    }
+    section {
+      text-align: center;
+      padding: 20px;
+      margin: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(250, 237, 248,0.85); /* Adjust the opacity as needed */
+    }
+    footer a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    footer a:hover {
+      color: #666;
+    }
+  </style>
+
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="#" id="portfolio-link">Portfolio</a>
+        <a href="about.html" id="about-link">About</a>
+      </div>
+  <header>
+    <h1>About Me</h1>
+
+  </header>
+
+  <section id="bio">
+    <h2>Biography</h2>
+    <p>Hello! My name's Daniella, and I'm currently a sophomore at Columbia University majoring in computer science. 
+        I'm passionate about exploring various fields of computer science, especially web development, artificial intelligence, and 
+        how to use these things for social good. 
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <table>
+        <tr>
+            <td>Python</td>
+            <td>Rust</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>HTML</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td></td>
+        </tr>
+    </table>
+   
+  </section>
+
+  <section id="rc">
+    <h2>Relavant Coursework</h2>
+    <table>
+        <tr>
+            <td>Intro to Python</td>
+            <td>Advanced Programming</td>
+        </tr>
+        <tr>
+            <td>Intro to Java</td>
+            <td>Intro to Databases</td>
+        </tr>
+        <tr>
+            <td>Data Structures</td>
+            <td>Linear Algebra</td>
+        </tr>
+        <tr>
+            <td>Discrete Mathematics</td>
+            <td></td>
+        </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>Contact me at <a href="mailto:peqqques@email.com">peqqques@email.com</a></p>
+  </footer>
+</body>
+
+</html>
