@@ -17,7 +17,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background: var(--bg-color);
+  background: white;
   z-index: 999;
   display: flex;
   justify-content: center;
@@ -403,7 +403,7 @@ body {
   --bg-color: rgba(158, 87, 137,0.3);
   --text-color: rgb(10, 10, 10);
   --blog-gray-color: rgba(38, 98, 52, 0.4);
-  /*--background-image: url(dark_green_pink.jpg);*/
+  --background-image: url(dark_green_pink.jpg);
 }
 
 #navbar {
