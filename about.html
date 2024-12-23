@@ -1,6 +1,4 @@
-
 <!DOCTYPE html><html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +19,7 @@
       background-size: cover;
         font-family: "Questrial", sans-serif;
         align-items: center;
-        color: white;
+        color: #EBDAE6;
     }
     header {
       background-color: rgba(158, 87, 137,0.3);
@@ -34,6 +32,7 @@
      position: relative;
      display: inline-block;
         font-family: "Questrial", sans-serif;
+        color: #EBDAE6;
     }
 
     h2::after {
@@ -46,30 +45,41 @@
      bottom: 0;
      left: 25%;
         font-family: "Questrial", sans-serif;
+        color: #EBDAE6;
     }
 
     #bio p {
-        font-weight: bold;
         font-family: "Questrial", sans-serif;
+        color: #EBDAE6;
+        max-width: 60%;
+        margin: 0 auto;
+        line-height: 1.6;
+        width: 100%;
     }
     #skills {
         text-align:center;
         font-family: "Questrial", sans-serif;
+        color: #EBDAE6;
     }
     table {
         margin: 0 auto;
         border-collapse:collapse;
         text-align:center;
         font-family: "Questrial", sans-serif;
+        color: #EBDAE6;
     }
     td {
         font-weight: bold;
         padding: 10px 40px;
         font-family: "Questrial", sans-serif;
+        color: #EBDAE6;
     }
     #rc {
         text-align: center;
         font-family: "Questrial", sans-serif;
+        color: #EBDAE6;
+        margin: 0 auto;
+        max-width: 80%;
 
     }
     #bio,
@@ -112,19 +122,45 @@
     }
     footer a {
       text-decoration: none;
-      color: #000;
+      color: #EBDAE6;
       font-weight: bold;
         font-family: "Questrial", sans-serif;
     }
     footer a:hover {
       color: #666;
     }
+    #loading {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background: rgba(158, 87, 137,0.3);
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #spinner {
+        animation: rotate 0.5s infinite linear;
+        width: 50px;
+        height: 50px;
+        border: 2px solid rgba(158, 87, 137,0.3);
+        border-bottom: 2px solid var(--text-color);
+        border-radius: 50%;
+        margin: 0;
+    }
   </style>
 
 </head>
-
-
 <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
     <div id="navbar">
       <a href="index.html" id="portfolio-link">Portfolio</a>
       <a href="about.html" id="about-link">About</a>
