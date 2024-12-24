@@ -28,22 +28,13 @@
         font-family: "Questrial", sans-serif;
     }
 
-    h2 {
-     position: relative;
-     display: inline-block;
-        font-family: "Questrial", sans-serif;
-        color: #EBDAE6;
+    h1 {
+        text-align: center;
+        font-size: 35px;
     }
 
-    h2::after {
-     content: '';
-     display: block;
-     width: 60%; 
-     height: 2px; 
-     background-color: #333;
-     position: absolute;
-     bottom: 0;
-     left: 25%;
+    h2 {
+     text-align: center;
         font-family: "Questrial", sans-serif;
         color: #EBDAE6;
     }
@@ -56,35 +47,42 @@
         line-height: 1.6;
         width: 100%;
     }
-    #skills {
-        margin-right: auto;
+    #skills{
+        margin: 0 auto;
+    }
+    #rc {
         margin-left: auto;
-        font-family: "Questrial", sans-serif;
-        color: #EBDAE6;
+        margin-right: auto;
+        margin-bottom: 30px;
     }
     table {
         margin: 0 auto;
         border-collapse:collapse;
         font-family: "Questrial", sans-serif;
         color: #EBDAE6;
+        table-layout: fixed;
     }
     td {
-        font-weight: bold;
-        text-align: center;
-        padding: 10px 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
-    #rc {
-        margin: 0 auto;
+    #skills td:nth-child(1) {
         text-align: center;
-        max-width: 80%;
-        padding: 20px 0;
+    }
+    #skills td:nth-child(2) {
+        padding-left:20px;
+        text-align:center;
+    }
+    #rc td:nth-child(1) {
+        padding-left:25px;
+        text-align: center;
+    }
+    #rc td:nth-child(2) {
+        padding-left: 30px;
+        text-align:center;
+    }
 
-    }
-    #bio,
-    #skills
-    {
-        margin-bottom: -20px;
-    }
+
     section {
       text-align: center;
       padding: 20px;
@@ -109,12 +107,25 @@
         font-family: "Questrial", sans-serif;
     }
 
-    #navbar a:hover {
-        color: rgba(38, 98, 52, 0.4);
+    #navbar a::after {
+        content: '';
+        display: block;
+        width: 65%; /* Same width as the h2 underline */
+        height: 1px; /* Same height as the h2 underline */
+        background-color: white; /* Same color as the h2 underline */
+        bottom: 1px; /* Adjust the position of the underline */
+        position: absolute;
+        left: 25%;
     }
+
+    #navbar a:hover{
+        color: #333; /* Same hover color as the h2 underline */
+    }
+
+
     footer {
       text-align: center;
-      padding: 10px;
+      padding: 20px;
       background-color: rgba(158, 87, 137,0.3); /* Adjust the opacity as needed */
         font-family: "Questrial", sans-serif;
     }
